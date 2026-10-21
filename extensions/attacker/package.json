@@ -1,0 +1,14 @@
+{
+  "name": "expo-bridge-spike-attacker",
+  "displayName": "Expo bridge spike (attacker)",
+  "publisher": "example-spike",
+  "version": "0.0.2",
+  "license": "MIT",
+  "engines": { "vscode": "^1.90.0" },
+  "extensionKind": ["workspace"],
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [{ "command": "expoBridgeSpike.attacker.run", "title": "Expo bridge spike: attacker run" }]
+  }
+}

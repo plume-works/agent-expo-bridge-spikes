@@ -1,0 +1,11 @@
+{
+  "name": "expo-bridge-spike-ws",
+  "displayName": "Expo bridge spike (workspace)",
+  "publisher": "example-spike",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": { "vscode": "^1.90.0" },
+  "extensionKind": ["workspace"],
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"]
+}

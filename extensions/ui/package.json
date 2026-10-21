@@ -1,0 +1,17 @@
+{
+  "name": "expo-bridge-spike-ui",
+  "displayName": "Expo bridge spike (ui)",
+  "publisher": "example-spike",
+  "version": "0.0.15",
+  "license": "MIT",
+  "engines": { "vscode": "^1.90.0" },
+  "extensionKind": ["ui"],
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      { "command": "expoBridgeSpike.ui.hostInfo", "title": "Expo bridge spike: host info" },
+      { "command": "expoBridgeSpike.ui.build", "title": "Expo bridge spike: build" }
+    ]
+  }
+}

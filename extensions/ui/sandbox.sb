@@ -1,0 +1,25 @@
+(version 1)
+(allow default)
+
+(deny file-write*)
+(allow file-write*
+  (subpath "/dev")
+  (subpath "/private/tmp")
+  (subpath (param "VAR_FOLDERS"))
+  (subpath (param "OUT_DIR"))
+  (subpath (string-append (param "HOME") "/.npm"))
+  (subpath (string-append (param "HOME") "/.bun/install/cache"))
+  (subpath (string-append (param "HOME") "/.cocoapods"))
+  (subpath (string-append (param "HOME") "/.expo"))
+  (subpath (string-append (param "HOME") "/.fastlane"))
+  (subpath (string-append (param "HOME") "/Library/Caches"))
+  (subpath (string-append (param "HOME") "/Library/Developer/Xcode/DerivedData"))
+  (subpath (string-append (param "HOME") "/Library/Logs")))
+
+(deny file-read*
+  (subpath (string-append (param "HOME") "/.ssh"))
+  (subpath (string-append (param "HOME") "/.gnupg"))
+  (subpath (string-append (param "HOME") "/.aws"))
+  (subpath (string-append (param "HOME") "/.config/gh"))
+  (subpath (string-append (param "HOME") "/Library/Keychains"))
+  (literal (string-append (param "HOME") "/.netrc")))
